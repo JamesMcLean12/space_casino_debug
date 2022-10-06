@@ -1,28 +1,86 @@
+<!--Declares to the browser this is an HTML document.-->
 <!DOCTYPE html>
-
-<!--Start Our HTML tags and set the lang to eng-->
-<html lang ="en">
-<!--Start our head tags-->
-<head>
-    <title>Twin Comet Casino</title>
-    <!--Add style-->
+<!--Start the HTML page and sets the lang to English-->
+<html lang="en">
+<!--Head tag is used to include the meta tags 
+    and links to the javaScript code page.-->
+    <head>
+        <!--Title of the tab at the top of the page-->
+        <title>Space Casino</title>
+        <!--Add a space background-->
+        <!--CSS information here-->
     <style>
-        body {
-            background-image: url("GoodBG.jpg");
+        /*CSS code here*/
+        body { /*This is the opening*/
+            background-image: url("space.jpg");
+            /*This keeps the background from repeating*/
+            background-repeat: no-repeat;
+            /*this keeps the bgackground from scrolling*/
+            background-attachment: fixed;
+            color: white;
+            text-align: center;
+        } /*this is the closing*/
+
+        h1 {
+            text-align: center;
+            font-size: 75px;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 50px;
+        }
+
+        p { /*this aligns the texst to the left*/
+            text-align: left;
+            font-size: x-large;
+        }
+
+        #theFinalCountdown { /*It's the final count down do do do doooo do da doo doo doo*/
+            text-align: center;
+            font-size: xx-large;
+        }
+
+        button { /*this is what makes the butttttton function*/
+            background-color: white; /*this is the background color*/
+            color: green;
+            border: none;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            border-radius: 42px;
+            font-weight: bold;
+            align-self: center;
+        }
+
+        button:hover {
+            background-color: transparent;
+            border: 2px solid #4CAF50;
             color: white;
         }
-    </style>
-</head>
+    </style>        
+        <!--links to the javaScript code page-->
+        <script src="JavaScriptCode.js">      
+        </script> 
+    </head>
+    <!--Body tag is used to include the background image and 
+        the text for the header of the page.-->
+    <body>
+        <h1>Space Casino</h1>
+        <h2>Where the odds are in your favor</h2>      
+        <img src="insidecasino.jpg" alt="Inside Casino" width="500" height="333">
+        <script>
+            displayWelcome();
+            displayInstructions();
+            document.write("Space Game");
+            document.write("<br/><br/><br/>");
+            play();
+        </script>
+        <br/><br/><br/>
+    </body>
 
-<body>
-    <h1>Twin Comet Casino</h1>
-
-    <script>
-
-        welcomeDisplay();
-        document.write("<br><br>");
-        document.write("")
-    </script>
-
-</body>
 </html>
